@@ -6,7 +6,7 @@ def home(request):
     return render(request, 'blog/home.html')
 
 def about(request):
-    return HttpResponse('<h1>blog about page</h1>')
+    return render(request, 'blog/about.html')
 
 def privacyPolicy(request):
-    return HttpResponse("you're not really going to read this")
+    return render(request, 'blog/privacypolicy.html')
